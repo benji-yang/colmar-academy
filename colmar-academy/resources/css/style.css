@@ -1,0 +1,409 @@
+html {
+    font-size:62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-size:1.6rem;
+    margin: 0;
+    color: hsl(0, 0%, 30%);
+}
+
+.mobile {
+    display:none;
+}
+
+h2 {
+    font-size: 5.0rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 3.0rem;
+    font-weight: 640;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+#content-holder {
+    position: relative;
+    top: 6.4rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    h4 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+/* Header */
+header {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    height: 6.4rem;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 0 2.4rem;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#logo {
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+    font-weight: 700;
+}
+
+header span {
+    color: hsl(0, 0%, 60%);
+    font-weight: 600;
+}
+
+header img {
+    width: 5rem ;
+    height: auto;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 1.6rem;
+}
+
+@media only screen and (max-width: 480px) {
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 5px;
+        margin: 0 auto;
+    }
+
+    header .mobile nav li {
+        padding-left: 0;
+    }
+}
+
+/* First section */
+#first-content {
+    display: flex;
+    background-color:lightgray;
+    align-items: center;
+    padding: 3.2rem 0;
+}
+
+#first-content img {
+    margin: 0 2.4rem;
+    width: 60%;
+}
+
+#first-content div {
+    padding-right: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.read {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+#button {
+    text-align: center;
+    color: white;
+    flex-basis: 5rem;
+    background-color:hsl(0, 0%, 30%);
+    text-decoration: none;
+}
+
+#first-content h2, #first-content h4{
+    margin-bottom: 2rem; 
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 480px) {
+   #first-content {
+       display: block;
+   }
+
+   #first-content img {
+       width: 100%;
+       margin: 0;
+   }
+
+   #first-content div {
+       padding: 3.2rem 0;
+   }
+
+   #first-content h2, #first-content a, #first-content h4 {
+       margin: 0;
+       margin-left: 1.6rem;
+       margin-right: 1.6rem;
+   }
+
+   #first-content h4 {
+       margin-top: 3.2rem;
+       margin-bottom: 2.4rem;
+   }
+
+   #first-content p {
+       font-size: 2rem;
+       margin: 1.5rem auto;
+       font-weight: bold;
+   }
+
+   #first-content a {
+       background-color: hsl(0, 0%, 60%);
+   }
+}
+
+/* Second section */
+.second-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#second-content-block-1 {
+    box-sizing: border-box;
+    width: 59%;
+    padding: 3.2rem 2.4rem;
+}
+
+#second-content-block-1 img{
+    position: relative;
+    left: 1%;
+    width: 98%;
+    margin: 0;
+}
+
+#second-content-block-2 {
+    width: 40%;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+}
+.information img {
+    width: 34%;
+    height: auto;
+    margin: 1.6rem;
+}
+
+.information div {
+    width: 65%;
+}
+
+.information h3 {
+    margin-bottom: 0;
+}
+
+.information p {
+    margin-top: 0;
+    line-height: 1.8;
+}
+
+#guest-lecture {
+    background-color: lightgrey;
+}
+
+@media only screen and (max-width: 480px) {
+    #second-content-block-2 {
+        width: 100%;
+    }
+
+    .information {
+        display: block;
+    }
+
+    .information img {
+        width: 92%;
+    }
+
+    .information div {
+        padding: 0 1.6rem;
+    }
+
+    #guest-lecture {
+        background-color: white;
+    }
+}
+
+/* Third section */
+#third-content {
+    background-color: lightgray;
+    padding: 3.2rem;
+}
+
+#third-content h2 {
+    text-align: center;
+    margin-top: 0 auto;
+}
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-courses {
+    flex-basis: 25%;
+    margin: 3.2rem;
+    background-color: white;
+    padding-bottom: 1%;
+}
+
+#courses img {
+    width: 100%;
+    margin: 0;
+}
+
+.type-courses span {
+    text-transform: uppercase;
+}
+
+.type-courses h3, .type-courses p {
+    margin-left: 1.6rem;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    #third-content {
+        background-color: white;
+        padding: 3.2rem 1.6rem;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    #third-content h2 {
+        margin: 0 auto 1.6rem;
+    }
+
+    #third-content h3 {
+        background-color: lightgray;
+        padding: 1.6rem 1.6rem 2.4rem;
+        margin: 0 auto 0.8rem;
+        font-weight: 650;
+    }
+}
+
+/* Fourth section */
+.exhibit {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#fourth-content h2 {
+    text-align: center;
+}
+
+#video-part{
+    width: 59%;
+    box-sizing: border-box;
+    padding: 0 2.4rem 3.2rem;
+}
+
+#video-part video {
+    width: 100%;
+}
+
+#product {
+    width:40%;
+}
+
+.progress {
+    display:flex;
+    align-items: center;
+}
+
+.progress img {
+    width: 34%;
+    margin: 1.6rem;
+}
+
+.progress div {
+    width: 65%;
+}
+.progress h3 {
+    margin-bottom: 0;
+}
+
+#fisma {
+    background-color: lightgray;
+}
+
+@media only screen and (max-width: 480px) {
+    #fourth-content .mobile h2 {
+        margin: 3.2rem auto 1.6rem;
+    }
+    #fourth-content .mobile div {
+        margin-bottom: 2.4rem;
+    }
+
+    .mobile video {
+        width: 100%;
+    }
+}
+
+/* Footer section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 2.4rem;
+    border-top: 1px solid lightgray;
+}
+
+footer li {
+    display:inline-block;
+    margin: auto 1.6rem;
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        border: none;
+        padding: 1.6rem auto;
+    }
+}
